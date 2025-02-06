@@ -30,7 +30,8 @@ git push
 git checkout develop
 git pull
 
-mvn versions:set
+read -p "Next Develop version (v5.xxx.x-SNAPSHOT) : " nextVersion 
+mvn versions:set -DnewVersion=$nextVersion
 git status
 git diff
 mvn versions:commit

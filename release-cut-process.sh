@@ -38,6 +38,7 @@ git add pom.xml
 git status
 git commit -m "Updating Develop Version"
 
-git push origin release/$version
+git push --set-upstream=origin/release/$version release/$version
+
 
 
