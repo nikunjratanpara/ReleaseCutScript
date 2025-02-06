@@ -12,7 +12,7 @@ git pull
 git checkout main
 git pull
 
-read -p "Release version : " version 
+read -p "Release version (v5.xxx.x) : " version 
 
 git checkout hotfix/$version
 git pull origin hotfix/$version

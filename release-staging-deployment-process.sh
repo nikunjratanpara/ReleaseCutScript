@@ -11,7 +11,7 @@ git pull
 git checkout main
 git pull
 
-read -p "Release version : " version 
+read -p "Release version (v5.xxx.x) : " version 
 
 read -p "Finishing release version $version,Do you want to continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 

@@ -12,7 +12,7 @@ git pull
 git checkout main
 git pull
 
-read -p "hotfix version : " version 
+read -p "hotfix version (v5.xxx.x) : " version 
 echo $version
 read -p "hotfix version $version, Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 echo "hotfix start $version"
