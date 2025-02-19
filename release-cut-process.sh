@@ -16,7 +16,7 @@ git pull
 # Check for any concern on dev channel 
 read -p "Check for any concern on dev channel, Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 
-read -p "Release version : " version 
+read -p "Release version (v5.xxx.x): " version 
 echo $version
 read -p "release version $version, Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 echo "release start $version"
@@ -38,6 +38,7 @@ git add pom.xml
 git status
 git commit -m "Updating Develop Version"
 
-git push origin release/$version
+git push --set-upstream=origin/release/$version release/$version
+
 
 
