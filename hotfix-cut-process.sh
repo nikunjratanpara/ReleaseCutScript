@@ -33,6 +33,6 @@ git add pom.xml
 git status
 git commit -m "Updating Develop Version"
 
-git push origin hotfix/$version
+git push --set-upstream origin hotfix/$version
 
 echo "Create a pull request from the hotfix branch to main on Github, label it as "hotfix" and add relevant reviewers."
